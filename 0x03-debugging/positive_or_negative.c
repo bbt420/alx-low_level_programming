@@ -1,14 +1,16 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+#include "main.h"
+/**
+ * positive_or_negative - checks for positive or negative numbers
+ *
+ * @i: the number to be checked
+ *
+ * Return: always 0
+ */
 
-/* betty style doc for function main goes there */
-int main(void)
+void positive_or_negative(int i)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	return (0);
+	if (i < 0)
+		printf("%d is negative\n", i);
+	else
+		printf("%d is positive\n", i);
 }
